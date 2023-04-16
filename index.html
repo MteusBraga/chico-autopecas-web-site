@@ -4,49 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <title>Chico Auto Peças - sua loja de peças</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
-        *{  
-            font-family: 'Roboto Mono';
-            padding: 0px;
-            margin: 0px;
-        }
-        header{
-            background-color: yellow;
-        }
-        header nav{
-            text-align: right;
-
-            padding: 10px;
-            background-color: yellow;
-        }
-        header img{
-            
-            width: 10%;
-        }
-        nav a{
-            padding: 10px;
-            text-decoration: none;
-        }
-        nav#logo-header{
-
-        }
-
-    </style>
+    <!--Font-->
+    
 </head>
 <body>
-    <header>
-        <img src="./assets/img/logo.png" alt="">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+    <header class="header">
+        <nav class="nav">
+            <a href="#"><img class="logo-nav" src="logo.png" alt="Logo" srcset="./img/logo.png"></a>
+            <div class="nav-content">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar por um item" class="input-nav">
+                    <div class="bg-lupa">
+                        <a href="#">
+                            <img class="lupa-nav" src="img/lupa.svg" alt="Buscar">
+                        </a>
+                    </div>
+                </div>
+                <a class="items-nav"  href="#">SHOP</a>
+                <a class="items-nav"  href="#">SOBRE</a>
+                <a class="items-nav"  href="#">CONTATO</a>
+                <a class="items-nav" href="#">LOGIN</a>
+            </div>
         </nav>
     </header>
+
+
+    <script src="script.js
+    " ></script>
 </body>
 </html>
