@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
 
 
 *{  
-    
     margin: 0;
     padding: 0;
 }
 .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-image: linear-gradient(to top, #2d2d3d, #1f1f27);
-    padding: 20px;
+    padding: 10px;
 }
 
 .items-nav{
@@ -23,44 +26,160 @@
     transition: 0.5s;
 }
 .items-nav:hover{
+
     background-image: linear-gradient(to top, yellow, orange);
     background-color: yellow;
     color: black;
-    font-weight: bold;
 }
 .nav-content{
     display: flex;
+    gap: 20px;
     justify-content: right;
     align-items: center;
 }
 .logo-nav{
     display: flex;
-    position: absolute;
     width: 60px;
 }
 
 .search-box{
-    padding: 10px;
+    padding: 5px;
     border-radius: 40px;
     display: flex;
     justify-content: space-between;
-    gap: 5px;
     align-items: center;
     background-color: white;
 }
 
 .input-nav{
-    font-size: 16px;
-
+    font-size: 14px;
+    width: 300px;
     outline: none;
     border: none;
 }
 
 .lupa-nav{
-    
+    opacity: 30%;
     width: 25px;
     height: 25px;
 }
 
+.main-intro{
+    background-image: url(img/wallpaper-intro.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    height: 300px;
+}
 
+.intro-box{
+    padding: 10px;
+    max-width:650px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+    display:flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: left;
+    margin: auto;
+}
+.intro-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+}
+.intro-p{
+    font-weight: light;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+}
+
+.main-content-title{
+    margin: 40px 0px;
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: center;
+}
+
+.main-servicos-items{
+    background-image: linear-gradient(to top,rgba(250, 237, 54, 0.76), rgb(255, 255, 255) 50%);
+    display: grid;
+    grid-template-columns: auto auto auto
+     
+}
+
+.card-servicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    border: 1px solid black;
+}
+
+.card-troca_oleo{
+    background-image: url(img/troca_de_oleo.jpg);
+}
+.card-alinhamento_balanceamento{
+    background-image: url(img/alinhamento_e_balanceamento.jpg);
+}
+.card-troca_parabrisa{
+    background-image: url(img/troca_parabrisa.jpg);
+}
+.card-suspensao{
+    background-image: url(img/suspensao.jpg);
+}
+.card-motores{
+    background-image: url(img/motores.jpg);
+}
+.card-embreagem{
+    background-image: url(img/embreagem.jpg);
+}
+
+.card-servicos-p{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+    text-shadow: 3px 3px 3px black;
+}
+
+
+@media  (max-width: 950px){
+    .nav-menu{
+        display: none;
+    }
+    .search-box{
+        display: none;
+    }
+    .logo-nav{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 655px){
+    .intro-box{
+        text-align: center;
+    }
+    .intro-p{
+        display: block;
+        font-size: 0.6em;
+        margin: 0 auto 0 auto;
+        width: 50%;
+    }
+}
 
